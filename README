@@ -13,13 +13,7 @@
 
 与原版的区别
 
-几乎没有。我只改了：
-
-- 版本号尾部加了个自定义后缀（比如 
-"-my-custom"）
-- 启动 banner 里悄悄加了句 
-"Powered by curiosity"
-- 可能顺手修了几个 checkpatch 警告（如果我有空的话）
+没有。
 
 其他一切行为与主线内核完全一致。
 
@@ -32,6 +26,7 @@ sudo reboot
 
 许可
 ## 遵循原版 GPL v2 许可证。所有功劳归于 Linus Torvalds 及数千名贡献者。
+fork 是因为供个人学习
 
 “Talk is cheap. Show me the code.”
 — Linus Torvalds
