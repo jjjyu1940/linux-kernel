@@ -1,3 +1,47 @@
+
+## My Linux Kernel Fork — 致敬经典
+
+这是一个个人维护的 Linux 内核分支，纯粹出于学习和纪念目的。Linux 内核由 Linus Torvalds 于 1991 年创建，至今已发展成人类历史上最成功的开源项目之一。
+
+为什么要 fork？
+
+- 为了亲手触摸那几千万行 C 代码的脉搏
+- 为了理解操作系统最底层的调度、内存、文件系统是如何运转的
+- 为了在启动时看到自己的名字出现在 
+"/proc/version" 里
+- 以及，单纯地觉得“我也能拥有一个属于自己的内核版本”这件事很酷
+
+与原版的区别
+
+几乎没有。我只改了：
+
+- 版本号尾部加了个自定义后缀（比如 
+"-my-custom"）
+- 启动 banner 里悄悄加了句 
+"Powered by curiosity"
+- 可能顺手修了几个 checkpatch 警告（如果我有空的话）
+
+其他一切行为与主线内核完全一致。
+
+## 如何编译运行
+
+make olddefconfig
+make -j$(nproc)
+sudo make modules_install install
+sudo reboot
+
+许可
+## 遵循原版 GPL v2 许可证。所有功劳归于 Linus Torvalds 及数千名贡献者。
+
+“Talk is cheap. Show me the code.”
+— Linus Torvalds
+
+
+
+
+
+原本的readme
+
 Linux kernel
 ============
 
